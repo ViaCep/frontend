@@ -1,5 +1,17 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import Background from '../../assets/street.jpg'
+
+
+const AnimatedFade = keyframes`
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    },
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+`;
 
 export const Container = styled.div``;
 
@@ -16,27 +28,6 @@ export const Details = styled.div`
 `;
 
 export const Row = styled.div``;
-
-export const Nav = styled.div``;
-
-export const Imagem = styled.img`
-    width: 90px;
-    height: 90px;
-    object-fit: cover;
-`;
-
-export const Links = styled.div`
-    display: flex;
-
-    a {
-        margin-right: 15px;
-        color: #3c3c3c;
-        font-weight: bold;
-    }
-    a:nth-child(1){
-        color: #FF3D00;
-    }
-`;
 
 export const ContainerCep = styled.div`
     height: calc(100% - 90px);
@@ -55,9 +46,12 @@ export const Titulo = styled.p`
     font-weight: bold;
     line-height: 40px;
     color: #000000cc;
+    animation: ${AnimatedFade} .6s ease 1;
 `;
 
-export const Lengend = styled.p``;
+export const Lengend = styled.p`
+    animation: ${AnimatedFade} .6s ease 1;
+`;
 
 export const ContainerInputSearch = styled.div`
     width: 50%;
@@ -76,6 +70,7 @@ export const InputSearch = styled.input`
     border-radius: 30px;
     margin-top: 20px;
     color: #3d3d3d;
+    animation: ${AnimatedFade} .6s ease 1;
 
     ::placeholder {
         color: #00000044;
@@ -91,4 +86,5 @@ export const ButtonSubmit = styled.button`
     padding: 5px 10px;
     border-radius: 100%;
     color: #f8f8f8;
+    animation: ${AnimatedFade} .6s ease 1;
 `;
