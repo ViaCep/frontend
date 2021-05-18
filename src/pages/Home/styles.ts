@@ -1,5 +1,4 @@
 import styled, { keyframes } from 'styled-components'
-import Background from '../../assets/street.jpg'
 
 
 const AnimatedFade = keyframes`
@@ -18,13 +17,6 @@ export const Container = styled.div``;
 export const Search = styled.div`
     height: 100vh;
     background-color: #f8f8f8;
-`;
-
-export const Details = styled.div`
-    height: 100vh;
-    background: url(${Background});
-    background-size: cover;
-    background-repeat: no-repeat;
 `;
 
 export const Row = styled.div``;

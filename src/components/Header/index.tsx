@@ -9,7 +9,7 @@ const Header: React.FC = () => {
             <Imagem src={Logo} />
             <Links>
                 <NavLink to="/" activeClassName="active" exact={true}>Pesquisar</NavLink>
-                <NavLink to="/sobre" activeClassName="active">Sobre</NavLink>
+                <NavLink to="/about" activeClassName="active">Sobre</NavLink>
             </Links>
         </Nav>
     );

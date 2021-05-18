@@ -6,7 +6,7 @@ import {
     Description
 } from './styles'
 
-const Sobre: React.FC = () => {
+const About: React.FC = () => {
     return(
         <>
             <ContainerTitulo>
@@ -23,4 +23,4 @@ const Sobre: React.FC = () => {
     );
 }
 
-export default Sobre;
+export default About;

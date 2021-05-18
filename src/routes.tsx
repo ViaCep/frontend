@@ -3,13 +3,13 @@ import { Switch, Route} from "react-router-dom";
 
 //Pages
 import Home from './pages/Home'
-import Sobre from './pages/Sobre'
+import About from './pages/About'
 
 const Routes: React.FC = () => {
     return (
         <Switch>
             <Route path="/" component={Home} exact />
-            <Route path="/sobre" component={Sobre} />
+            <Route path="/about" component={About} />
         </Switch>
     );
 }
